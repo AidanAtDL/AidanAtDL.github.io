@@ -18,12 +18,14 @@
 			<h1>Datalicious PM Training Pages</h1>
 			<p>A random bit of text</p>
 			<p>Another bit of text with an <a href="http://google.com">outbound link</a></p>
-			<button type="button">
+			<button type="button" onclick="dataLayer.push({'event': 'GAevent',
+								      'category': 'Button Stuff',
+								      'action': 'Click'});">
 				Click For Data Layer Pushing
 					<script type="text/javascript">
 						dataLayer.push({'event': 'GAevent',
-								'category': 'Button Click',
-								'action': 'Click'});
+								'category': 'Button Stuff',
+								'action': 'Display'});
 					</script>
 			</button>
 		</center>
