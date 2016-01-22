@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Datalicious PM/AM Training Pages</title>
-		<script type="text/javascript">dataLayer = [];</script>
+		<title>Datalicious Domino's Data Layer Training</title>
+		<script type="text/javascript">window.dataLayer = window.dataLayer || [];</script>
 		<script type="text/javascript">
 			dataLayer.push({'loginStatus': 'Yes'});
 		</script>
@@ -18,20 +18,24 @@
 		})(window,document,'script','dataLayer','GTM-KGB9FN');</script>
 		<!-- End Google Tag Manager -->
 		<center>
-			<h1>Datalicious PM Training Pages</h1>
-			<p>A random bit of text</p>
+			<h1>Domino's Data Layer Training</h1>
 			
-			<p>Another bit of text with an <a href="http://google.com">outbound link</a></p>
-			<button type="button" onclick="dataLayer.push({'event': 'GAevent',
-								      'category': 'Button Stuff',
-								      'action': 'Click'});">
-				Click For Data Layer Pushing
-					<script type="text/javascript">
-						dataLayer.push({'event': 'GAevent',
-								'category': 'Button Stuff',
-								'action': 'Display'});
-					</script>
-			</button>
+			<p>A simple example of display and click dataLayer events</p>
+			
+			<div>
+				<h3>BBQ Meatlovers</h3>
+				<img src="./BBQMeatLovers.png">
+				<script type="text/javascript">
+					dataLayer.push({'event': 'trPretotype',
+							'category': 'BBQ Meatlovers',
+							'action': 'Display'});
+				</script>
+				<button type="button" onclick="dataLayer.push( {'event': 'trPretotype',
+										'category': 'BBQ Meatlovers',
+										'action': 'Click'});">
+					Click to 'Add to Cart'
+				</button>
+			</div>
 		</center>
 	</body>
 </html>
